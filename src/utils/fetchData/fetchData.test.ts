@@ -1,7 +1,6 @@
 import { fetchData } from './fetchData';
 
-test('the data is peanut butter', () => {
-  return fetchData().then((str) => {
-    expect(str).toBe('peanut butter');
-  });
+test('the data is peanut butter', async () => {
+  const str = await fetchData();
+  expect(str).toBe('peanut butter');
 });
