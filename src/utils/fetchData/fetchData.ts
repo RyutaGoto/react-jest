@@ -1,3 +1,3 @@
-export const fetchData = (callback: (str: string) => void) => {
-  setTimeout(() => callback('peanut butter'), 500);
+export const fetchData = () => {
+  return Promise.resolve('peanut butter');
 };
