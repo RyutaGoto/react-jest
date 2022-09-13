@@ -6,6 +6,10 @@ beforeEach(() => {
   pointManagement = new PointManagement(100);
 });
 
+afterEach(() => {
+  pointManagement.clear();
+});
+
 it('add 1', () => {
   expect(pointManagement.add(1)).toBe(101);
   expect(pointManagement.total).toBe(101);
