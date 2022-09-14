@@ -2,11 +2,11 @@ import { PointManagement } from './PointManagement';
 
 let pointManagement: PointManagement;
 
-beforeEach(() => {
+beforeAll(() => {
   pointManagement = new PointManagement(100);
 });
 
-afterEach(() => {
+afterAll(() => {
   pointManagement.clear();
 });
 
