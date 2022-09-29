@@ -1,7 +1,7 @@
 import { Users } from './Users';
 import axios from '../utils/axios';
 
-jest.mock('../axios');
+jest.mock('../utils/axios');
 const mockAxios = axios as jest.Mocked<typeof axios>;
 
 test('should fetch users', () => {
